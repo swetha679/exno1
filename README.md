@@ -33,6 +33,9 @@ STEP 6: Use zscore of to remove outliers
 
         ```df.shape```
 
+        ![Screenshot 2025-04-18 201213](https://github.com/user-attachments/assets/5534a73c-06da-4dea-8bb9-b2817bc9c099)
+
+
 
 
 
