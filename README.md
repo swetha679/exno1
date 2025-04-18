@@ -22,5 +22,8 @@ STEP 6: Use zscore of to remove outliers
 
 # Coding and Output
             ```import pandas as pd```
+            ```df=pd.read_csv("/content/SAMPLEIDS (1).csv")```
+            ``` df```
+            https://colab.research.google.com/drive/1Tv4AncM03bwNIEcXlw2-GEDr2YMxyvBN#scrollTo=rd1YqIJUKTt3&line=2&uniqifier=1
 # Result
           <<include your Result here>>
