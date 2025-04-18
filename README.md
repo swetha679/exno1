@@ -21,12 +21,13 @@ STEP 5: Remove outliers using IQR
 STEP 6: Use zscore of to remove outliers
 
 # Coding and Output
-       ```import pandas as pd```
-        ```df=pd.read_csv("/content/SAMPLEIDS (1).csv")```
-        ``` df```
+         ```import pandas as pd```
+           ```df=pd.read_csv("/content/SAMPLEIDS (1).csv")```
+          ``` df```
 ![Screenshot 2025-04-18 200314](https://github.com/user-attachments/assets/d86702f6-f275-4ff7-a86e-1477bd830bb2)
 ![Screenshot 2025-04-18 200334](https://github.com/user-attachments/assets/c24b8d21-f001-46c7-a1ef-574a438ff2ff)
-    ```df.shape```
+
+        ```df.shape```
 
 
 
