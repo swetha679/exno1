@@ -331,56 +331,5 @@ print(df[z['weight']>3])
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        
-        
-        
-
-
-
-
-
-# Result
-          <<include your Result here>>
+# Result:
+Thus for the given data the data cleaning process is performed successfully.
