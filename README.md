@@ -129,6 +129,229 @@ df.isna().sum()
 
 ![Screenshot 2025-04-18 203249](https://github.com/user-attachments/assets/ca5e9633-33ae-4bf7-a70f-df93a4520ee3)
 
+```
+df.M3.fillna(method='ffill',inplace=True)
+df
+```
+
+![Screenshot 2025-04-19 064353](https://github.com/user-attachments/assets/bd6a9138-bf70-4097-b365-3eac14fa5234)
+![Screenshot 2025-04-19 064424](https://github.com/user-attachments/assets/d741c370-f708-444f-a5c1-1ad20b42e72f)
+
+
+```
+df.isnull().sum()
+```
+
+![Screenshot 2025-04-19 064512](https://github.com/user-attachments/assets/459360f4-82af-413d-9bd5-428e44f193c7)
+
+```
+df.duplicated()
+```
+
+![Screenshot 2025-04-19 064608](https://github.com/user-attachments/assets/4a6145c1-f560-4c3c-a8bc-ea3e5df29365)
+![Screenshot 2025-04-19 064648](https://github.com/user-attachments/assets/5523e84d-374d-423a-a140-9e28c2a597f7)
+
+
+```
+df.drop_duplicates(inplace=True)
+ df
+```
+
+![Screenshot 2025-04-19 064745](https://github.com/user-attachments/assets/00b5d38a-bc99-4c7c-83ed-5ba8e3142f37)
+![Screenshot 2025-04-19 064808](https://github.com/user-attachments/assets/c90ab56b-7251-45b5-90cb-e2e027301f47)
+
+
+``
+df['DOB']
+```
+
+![Screenshot 2025-04-19 064927](https://github.com/user-attachments/assets/f19c11d4-a468-4b08-aee3-0847141467b0)
+![Screenshot 2025-04-19 064940](https://github.com/user-attachments/assets/b577752b-79cc-41f8-80ff-3ded5c3e7319)
+
+```
+import seaborn as sns
+sns.heatmap(df.isnull(),yticklabels=False,annot=True)
+```
+
+
+
+![Screenshot 2025-04-19 065043](https://github.com/user-attachments/assets/79c7a4db-c567-41db-b9ad-c557df7f8dea)
+
+
+```
+df.dropna(inplace=True)
+sns.heatmap(df.isnull(),yticklabels=False,annot=True)
+```
+
+![image](https://github.com/user-attachments/assets/0b2cdb9b-69ce-4d5c-ab38-b8e0dd2dacf5)
+
+```
+age=[1,3,28,27,25,92,30,39,40,50,26,24,29,94]
+ df=pd.DataFrame(age)
+ df
+ ```
+
+![Screenshot 2025-04-19 065346](https://github.com/user-attachments/assets/b63df5ee-53f0-4a24-aad0-d83d1eea22b9)
+
+```
+sns.boxplot(data=df)
+```
+
+![image](https://github.com/user-attachments/assets/4af0d2c0-d153-448a-939b-9bcf112167a5)
+
+```
+sns.scatterplot(data=df)
+```
+
+![Screenshot 2025-04-19 065550](https://github.com/user-attachments/assets/cd6467e7-b34f-4bf3-b5cc-d6aa3610d66d)
+
+
+```
+q1=df.quantile(0.25)
+q2=df.quantile(0.5)
+q3=df.quantile(0.75)
+iqr=q3-q1
+iqr
+```
+
+![Screenshot 2025-04-19 065726](https://github.com/user-attachments/assets/bc28a23b-5c3d-42df-b326-c130de5eb4dd)
+
+```
+import numpy as np
+Q1 = np.percentile(df, 25)
+Q3=np.percentile(df,75)
+IQR=Q3-Q1
+IQR
+```
+
+![Screenshot 2025-04-19 065919](https://github.com/user-attachments/assets/ff270dc8-ce1f-4dbc-96d7-b4c5f026418a)
+
+```
+lower_bound=Q1-1.5*IQR
+upper_bound=Q3+1.5*IQR
+lower_bound
+```
+
+![Screenshot 2025-04-19 070036](https://github.com/user-attachments/assets/5064b62a-095c-4d85-9912-7a23a0bee6e0)
+
+```
+upper_bound
+```
+
+![Screenshot 2025-04-19 070124](https://github.com/user-attachments/assets/a0b2dcc3-05fd-441e-9ad8-23253d3cd78c)
+
+```
+outliers=[x for x in age if x<lower_bound or x>upper_bound]
+print("Q1:",Q1)
+print("Q3:",Q3)
+print("IQR:",IQR)
+print("Lower Bound:",lower_bound)
+print("Upper Bound:",upper_bound)
+print("Outliers:",outliers)
+```
+
+![Screenshot 2025-04-19 070230](https://github.com/user-attachments/assets/7324a5f8-0572-4124-bfb2-1f383713074e)
+
+```
+df=df[((df>=lower_bound)&(df<=upper_bound))]
+df
+```
+
+![Screenshot 2025-04-19 070330](https://github.com/user-attachments/assets/64714387-8a0a-4727-8ec8-c704efb36bfc)
+
+ ```
+df=df.dropna()
+df
+```
+
+![Screenshot 2025-04-19 070510](https://github.com/user-attachments/assets/65ed7d9a-5768-410d-95b8-f885f084d035)
+
+```
+sns.boxplot(data=df)
+```
+
+![image](https://github.com/user-attachments/assets/e6fd24ad-2129-4d0c-a884-39eae32edb6b)
+
+```
+sns.scatterplot(data=df)
+```
+
+![image](https://github.com/user-attachments/assets/fb1bbd2f-e975-4fb9-b99c-c1efd80439df)
+
+```
+data=[1,2,2,2,3,1,1,15,2,2,2,3,1,1,2]
+mean=np.mean(data)
+std=np.std(data)
+print('mean of the dataset is',mean)
+print('std.deviation is',std)
+
+```
+
+![Screenshot 2025-04-19 070813](https://github.com/user-attachments/assets/16572332-9f38-4a62-bedb-10e92166d963)
+
+```
+threshold=3
+outlier=[]
+for i in data:
+ z=(i-mean)/std
+ if z>threshold:
+   outlier.append(i)
+print('outlier in dataset is',outlier)
+
+```
+
+![Screenshot 2025-04-19 070903](https://github.com/user-attachments/assets/fedbef1a-e0da-4369-9125-5aedb4eca173)
+
+```
+ import pandas as pd
+ import numpy as np
+ import seaborn as sns
+ from scipy import stats
+ data={'weight':[12,15,18,21,24,27,30,33,36,39,42,45,48,51,54,57,60,63,
+ 66,69,202,72,75,78,81,84,232,87,90,93,96,99,258]}
+ df=pd.DataFrame(data)
+ df
+ ```
+
+![image](https://github.com/user-attachments/assets/86957bc9-a10a-46a4-b299-daafc11d5752)
+![Screenshot 2025-04-19 071020](https://github.com/user-attachments/assets/eae29ffd-7241-453a-a703-cf979970512f)
+
+```
+z=np.abs(stats.zscore(df))
+print(df[z['weight']>3])
+```
+
+![Screenshot 2025-04-19 071116](https://github.com/user-attachments/assets/c9f89693-7d9d-414f-aa1f-8dcc537b3205)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
