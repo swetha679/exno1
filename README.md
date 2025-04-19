@@ -88,7 +88,7 @@ mn
 ![Screenshot 2025-04-18 202504](https://github.com/user-attachments/assets/7bfa870e-554d-409c-87c2-ee89cf53296d)
 
 ```
- df.TOTAL.fillna(mn,inplace=True)
+df.TOTAL.fillna(mn,inplace=True)
 df
 ```
 
@@ -154,7 +154,7 @@ df.duplicated()
 
 ```
 df.drop_duplicates(inplace=True)
- df
+df
 ```
 
 ![Screenshot 2025-04-19 064745](https://github.com/user-attachments/assets/00b5d38a-bc99-4c7c-83ed-5ba8e3142f37)
@@ -187,8 +187,8 @@ sns.heatmap(df.isnull(),yticklabels=False,annot=True)
 
 ```
 age=[1,3,28,27,25,92,30,39,40,50,26,24,29,94]
- df=pd.DataFrame(age)
- df
+df=pd.DataFrame(age)
+df
  ```
 
 ![Screenshot 2025-04-19 065346](https://github.com/user-attachments/assets/b63df5ee-53f0-4a24-aad0-d83d1eea22b9)
@@ -293,9 +293,9 @@ print('std.deviation is',std)
 threshold=3
 outlier=[]
 for i in data:
- z=(i-mean)/std
- if z>threshold:
-   outlier.append(i)
+z=(i-mean)/std
+if z>threshold:
+outlier.append(i)
 print('outlier in dataset is',outlier)
 
 ```
