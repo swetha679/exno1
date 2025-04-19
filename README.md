@@ -161,7 +161,7 @@ df.drop_duplicates(inplace=True)
 ![Screenshot 2025-04-19 064808](https://github.com/user-attachments/assets/c90ab56b-7251-45b5-90cb-e2e027301f47)
 
 
-``
+```
 df['DOB']
 ```
 
