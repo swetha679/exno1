@@ -34,8 +34,7 @@ df
 ```
 
           
-![Screenshot 2025-04-18 200314](https://github.com/user-attachments/assets/d86702f6-f275-4ff7-a86e-1477bd830bb2)
-![Screenshot 2025-04-18 200334](https://github.com/user-attachments/assets/c24b8d21-f001-46c7-a1ef-574a438ff2ff)
+![Screenshot 2025-03-19 141050](https://github.com/user-attachments/assets/1f6d3ff3-a24f-45c8-af35-8f2f30c32a83)
 
 
 
@@ -48,6 +47,9 @@ df.shape
 
  ```
  df.describe()
+
+![Screenshot 2025-03-19 141105](https://github.com/user-attachments/assets/5fe25682-a13f-46fc-a4d3-d3be068fb153)
+
 ```
 ```
 df.info()
