@@ -47,10 +47,10 @@ df.shape
 
  ```
  df.describe()
-
-    ![Screenshot 2025-03-19 141105](https://github.com/user-attachments/assets/5fe25682-a13f-46fc-a4d3-d3be068fb153)
-
 ```
+
+![Screenshot 2025-03-19 141105](https://github.com/user-attachments/assets/5fe25682-a13f-46fc-a4d3-d3be068fb153)
+
 ```
 df.info()
 ```
