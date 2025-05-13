@@ -154,8 +154,8 @@ df.isnull().sum()
 df.duplicated()
 ```
 
-![Screenshot 2025-04-19 064608](https://github.com/user-attachments/assets/4a6145c1-f560-4c3c-a8bc-ea3e5df29365)
-![Screenshot 2025-04-19 064648](https://github.com/user-attachments/assets/5523e84d-374d-423a-a140-9e28c2a597f7)
+![image](https://github.com/user-attachments/assets/1e47ad03-48f3-41cd-a383-fa5a95cb622c)
+
 
 
 ```
