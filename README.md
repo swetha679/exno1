@@ -171,8 +171,8 @@ df
 df['DOB']
 ```
 
-![Screenshot 2025-04-19 064927](https://github.com/user-attachments/assets/f19c11d4-a468-4b08-aee3-0847141467b0)
-![Screenshot 2025-04-19 064940](https://github.com/user-attachments/assets/b577752b-79cc-41f8-80ff-3ded5c3e7319)
+![Screenshot 2025-03-19 141336](https://github.com/user-attachments/assets/b608f0d6-7fd7-4d7c-8ea2-2d5a59e920cf)
+
 
 ```
 import seaborn as sns
