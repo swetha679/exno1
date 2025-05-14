@@ -315,10 +315,10 @@ print('outlier in dataset is',outlier)
  df
  ```
 
-![image](https://github.com/user-attachments/assets/86957bc9-a10a-46a4-b299-daafc11d5752)
+![Screenshot 2025-03-19 141545](https://github.com/user-attachments/assets/97cce8b9-c601-4d20-b9dd-442254da195b)
 
 
-![Screenshot 2025-04-19 071020](https://github.com/user-attachments/assets/eae29ffd-7241-453a-a703-cf979970512f)
+![Screenshot 2025-03-19 141550](https://github.com/user-attachments/assets/7467d8e5-376d-4373-81af-3faad2ae0ad0)
 
 ```
 z=np.abs(stats.zscore(df))
