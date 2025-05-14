@@ -100,8 +100,7 @@ df.TOTAL.fillna(mn,inplace=True)
 df
 ```
 
-![Screenshot 2025-04-18 202630](https://github.com/user-attachments/assets/5dc6afd1-95c7-4b59-913d-5f6db1787bc3)
-![Screenshot 2025-04-18 202644](https://github.com/user-attachments/assets/d9cb1de5-4bd3-4afb-bf4f-eca0e3198981)
+![Screenshot 2025-03-19 141214](https://github.com/user-attachments/assets/e4abcd17-b028-4314-9089-cb93aa0524c2)
 
 ```
 df.isnull().sum()
@@ -114,8 +113,7 @@ df.M1.fillna(method='ffill',inplace=True)
 df
 ```
 
-![Screenshot 2025-04-18 202924](https://github.com/user-attachments/assets/56882a46-3fce-4a74-b5c1-c62344206934)
-![Screenshot 2025-04-18 202937](https://github.com/user-attachments/assets/d7969f7d-05a0-4989-b223-b364c13fa1e4)
+![Screenshot 2025-03-19 141232](https://github.com/user-attachments/assets/afc27a78-482c-46b5-aa0a-a1530380070d)
 
 ```
  df.isnull().sum()
@@ -128,9 +126,7 @@ df.M2.fillna(method='ffill',inplace=True)
 df
 ```
 
-![Screenshot 2025-04-18 203143](https://github.com/user-attachments/assets/c397a28a-528d-4050-a0bf-5bc79cd813fb)
-![Screenshot 2025-04-18 203153](https://github.com/user-attachments/assets/f5305570-d119-480f-9526-aa831411364c)
-
+![Screenshot 2025-03-19 141246](https://github.com/user-attachments/assets/28cd7461-579d-47ec-b20d-690d01516ca5)
 ```
 df.isna().sum()
 ```
@@ -142,8 +138,7 @@ df.M3.fillna(method='ffill',inplace=True)
 df
 ```
 
-![Screenshot 2025-04-19 064353](https://github.com/user-attachments/assets/bd6a9138-bf70-4097-b365-3eac14fa5234)
-![Screenshot 2025-04-19 064424](https://github.com/user-attachments/assets/d741c370-f708-444f-a5c1-1ad20b42e72f)
+![Screenshot 2025-03-19 141302](https://github.com/user-attachments/assets/3d25e3b2-cafc-4f17-9702-10839c0fde90)
 
 
 ```
@@ -165,8 +160,7 @@ df.drop_duplicates(inplace=True)
 df
 ```
 
-![Screenshot 2025-04-19 064745](https://github.com/user-attachments/assets/00b5d38a-bc99-4c7c-83ed-5ba8e3142f37)
-![Screenshot 2025-04-19 064808](https://github.com/user-attachments/assets/c90ab56b-7251-45b5-90cb-e2e027301f47)
+![Screenshot 2025-03-19 141319](https://github.com/user-attachments/assets/9fbde571-172a-49a3-9b6e-d42135b1e70c)
 
 
 ```
@@ -322,6 +316,8 @@ print('outlier in dataset is',outlier)
  ```
 
 ![image](https://github.com/user-attachments/assets/86957bc9-a10a-46a4-b299-daafc11d5752)
+
+
 ![Screenshot 2025-04-19 071020](https://github.com/user-attachments/assets/eae29ffd-7241-453a-a703-cf979970512f)
 
 ```
